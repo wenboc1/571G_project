@@ -122,9 +122,25 @@ Add the local Hardhat network in MetaMask:
 
 Then import a Hardhat test account from the `npx hardhat node` output.
 
-Recommended: use **Account #0**, because it has test ETH and receives the initial CGOV token supply after deployment.
+Recommended: use a Hardhat test account for frontend display only.
+
+### Import the CGOV Token into MetaMask
+
+By default, MetaMask will only display your ETH balance. To see your `CGOV` governance tokens, you need to import the custom token manually:
+
+1. **Get the Contract Address**: After running the deployment script (`npx hardhat run scripts/deploy.js --network localhost`), copy the deployed address for `CGOVToken` from your terminal.
+2. **Open MetaMask**: Ensure you are connected to the `Hardhat Localhost` network and have your imported test account selected.
+3. **Import Token**: 
+   - Go to the **Tokens** tab in MetaMask.
+   - Click the 3 dots on your riht and click **Import tokens**.
+   - Paste the copied `CGOVToken` address into the **Token Contract Address** field.
+   - The **Token Symbol** (`CGOV`) and **Token Decimal** (`18`) should auto-populate.
+4. **Confirm**: Click **Next**, and then click **Import Tokens**.
+
+Your initial CGOV balance will now be fully visible in your MetaMask wallet, and you are ready to create proposals and vote!
 
 ---
+
 
 ## How to Use (IMPORTANT)
 
