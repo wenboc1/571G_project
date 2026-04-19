@@ -1,5 +1,4 @@
-# CampusGov – Assignment 3 Implementation
-
+# CampusGov – Course Project
 ## Overview
 
 CampusGov is a simple DAO-style voting dApp built with Solidity, Hardhat, React, MetaMask, and `ethers.js`.
